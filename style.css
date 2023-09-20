@@ -70,8 +70,8 @@ li:nth-of-type(even) {
 
 a{
   color: #333;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .material-symbols-outlined{
