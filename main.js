@@ -14,33 +14,13 @@ let liText = ''
 
 
 function copy(){
-  /*navigator.clipboard.writeText(`${linkTemplate}`)
-  alert(`Copied ${linkTemplate}`)*/
-  
-  /*navigator.clipboard.writeText(`${linkTemplate}`).then(() => {
-    console.log('Content copied to clipboard');
-  }, () => {
-    console.error('Failed to copy');
-  })*/
   alert('>_< This feature is still under development')
+  
 }
 
 function delet(e){
-  /*ulEl = e.parentElement.previousElementSibling.innerHTML;
-  e.parentElement.remove()*/
-  
-/*  linkArray.filter(function(linkArrayContent) {
-    return linkArrayContent.id == e
-  }).map(function(e) {
-    if (document.querySelector('li').id == linkArrayContent.id){
-      
-    }*/
-  
-  
-  /*console.log(ulEl);
-  document.querySelector('li').removeChild(ulEl)*/
-  alert('>_< This feature is still under development')
-
+  e.parentElement.remove();
+  linkArray.splice(e.parentElement.id, 0);
 }
 
 function createLinks(){
@@ -56,13 +36,12 @@ function createLinks(){
     id: Date.now()
   }
   linkArray.push(linkArrayContent)
-  console.log(linkArray)
   
   
   
   for (let i = 0; i < linkArray.length; i++){
     liText = `
-    <li data-key="${linkArrayContent.id}"><a href="${linkArrayContent.linkTemplate}">${linkArrayContent.linkTemplate}</a> <span class="material-symbols-outlined hi" onclick="copy(this)">
+    <li data-key="${linkArrayContent.id}"><a href="${linkArrayContent.linkTemplate}">${linkArrayContent.linkTemplate}</a> <span class="material-symbols-outlined hi" onclick="copy()">
               content_copy
             </span><span class="material-symbols-outlined" onclick="delet(this)">
               delete
@@ -71,6 +50,7 @@ function createLinks(){
   }
   const item = document.querySelector(`[data-key='${linkArrayContent.id}']`);
   ulEl.innerHTML += liText
+  
 }
 
 
