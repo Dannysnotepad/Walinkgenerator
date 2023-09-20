@@ -11,8 +11,9 @@ body {
 }
 
 input[type=number]{
-  width: 100%;
+  width: 345px;
   height: 50px;
+  display: block;
   border-radius: 7px;
   font-size: 30px;
   padding-left: 10px;
@@ -29,9 +30,10 @@ input[type=number]::placeholder{
   font-family: 'Comic Neue', cursive;
 }
 #generate{
-  width: 100%;
+  width: 345px;
   height: 35px;
   border: none;
+  cursor: pointer;
   color: whitesmoke;
   background-color: green;
   border-radius: 7px;
@@ -48,7 +50,9 @@ ul{
 }
 
 li{
+  width: 325px;
   font-weight: bold;
+  text-align: justify;
   margin-top: 15px;
   padding: 10px;
   font-size: 20px;
@@ -72,4 +76,28 @@ a{
 
 .material-symbols-outlined{
   margin-left: 20px;
+  color: #333;
+}
+
+.emptyState{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h2{
+  margin-top: 10px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 80px;
+  color: dimgray;
+}
+
+h2 > small{
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+.hidden{
+  display: hidden;
 }
