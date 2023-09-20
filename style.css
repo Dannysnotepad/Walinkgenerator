@@ -75,6 +75,8 @@ a{
 }
 
 .material-symbols-outlined{
-  margin-left: 5px;
   color: #333;
+}
+.hi{
+  margin-right: 5px;
 }
