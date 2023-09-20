@@ -75,29 +75,6 @@ a{
 }
 
 .material-symbols-outlined{
-  margin-left: 20px;
+  margin-left: 10px;
   color: #333;
-}
-
-.emptyState{
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-}
-
-h2{
-  margin-top: 10px;
-  padding: 0px;
-  font-weight: bold;
-  font-size: 80px;
-  color: dimgray;
-}
-
-h2 > small{
-  font-size: 20px;
-  margin: 0px;
-  padding: 0px;
-}
-.hidden{
-  display: hidden;
 }
