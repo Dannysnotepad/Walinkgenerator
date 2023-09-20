@@ -62,7 +62,7 @@ function createLinks(){
   
   for (let i = 0; i < linkArray.length; i++){
     liText = `
-    <li data-key="${linkArrayContent.id}"><a href="${linkArrayContent.linkTemplate}">${linkArrayContent.linkTemplate}</a> <br> <span class="material-symbols-outlined" onclick="copy(this)">
+    <li data-key="${linkArrayContent.id}"><a href="${linkArrayContent.linkTemplate}">${linkArrayContent.linkTemplate}</a> <span class="material-symbols-outlined" onclick="copy(this)">
               content_copy
             </span><span class="material-symbols-outlined" onclick="delet(this)">
               delete
