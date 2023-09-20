@@ -72,6 +72,8 @@ a{
   color: #333;
   margin-right: 5px;
   margin-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .material-symbols-outlined{
