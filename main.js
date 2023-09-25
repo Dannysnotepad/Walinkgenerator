@@ -16,8 +16,8 @@ renderLinks();
 
 
 function copy(e) {
-  alert('>_< This feature is still under development')
-  //navigator.clipboard.writeText(linkArray.linkTemplate)
+  //alert('>_< This feature is still under development')
+  navigator.clipboard.writeText(linkArray.linkTemplate)
 }
 
 function delet(e) {
